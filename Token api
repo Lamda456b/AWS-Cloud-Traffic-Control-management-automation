@@ -1,0 +1,12 @@
+Token {}
+
+
+curl -X POST https://holotech.cloud/api/deploy \
+  -H "Authorization: Bearer <token>" \
+  -d '{
+    "app_name": "my-chat-app",
+    "source": "https://github.com/user/app",
+    "regions": ["us-east-1", "eu-west-1"],
+    "type": "realtime",
+    "ai_optimize": true
+  }'
